@@ -17,5 +17,5 @@ end
 qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
 
 if qNVAKkuwxNpqruLjSRHg == true then
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/UpdatedTwicePaidFarm/refs/heads/main/MadeByTheOneAndOnlyElgato"))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/UpdatedPaidFarm/refs/heads/main/MadeByElgato"))()
 end
