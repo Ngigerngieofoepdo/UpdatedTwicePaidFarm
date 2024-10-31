@@ -1,0 +1,73 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
+Window = Library.Main("Gato's Slap Farm Paid","LeftShift") -- change "LeftAlt" to key that you want will hide gui
+
+-- tab
+
+local Tab = Window.NewTab("The Farm")
+local Section = Tab.NewSection("(Undetectable)")
+local Button = Section.NewButton("Start Farm",function()
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Op slap farm, Dont leak!";
+ Text = "Made by elgato on discord!";
+ Icon = "";
+ Duration = 100;
+ Button1 = "W";
+ Callback = NotificationBindable;
+})
+
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("Answer")
+elseif Text == ("Button2 text") then
+ print ("Answer2")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Loaded Antilag (Works with some devices)";
+ Text = "Enjoy!";
+ Icon = "";
+ Duration = 100;
+ Button1 = "W";
+ Callback = NotificationBindable;
+})
+
+Setting = { 
+        Time = 18, -- Max is 18 (seconds)
+        Amount = 1000, -- Max is 20000, Maybe 1000 it's the best value for bad devices
+        ErrorReply = "kick", -- (If the script cannot find any server then you will get kicked, You can change to "rejoin" to rejoin if the script can't find any server)
+        SwitchServerType = "serverhop" -- Replace it with "rejoin" if u want to rejoin the current server 
+    }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/SigmaSlapFarm/refs/heads/main/ByGatoLol"))()
+end)
+local Button = Section.NewButton("Stop Farm",function()
+local function resetCharacter(player)
+    if player and player.Character then
+        player.Character:Destroy()
+        player:LoadCharacter()
+        print("Player " .. player.Name .. "'s character has been reset.")
+    else
+        warn("Player or player's character not found.")
+    end
+end
+
+local player = game.Players:GetPlayers()[1]
+resetCharacter(player)
+end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngigerngieofoepdo/Logs/refs/heads/main/ImportantForTheFarm"))()
